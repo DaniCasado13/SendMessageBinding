@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="message"
+            type="com.danicc.sendmessage.data.Message" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ViewMessageActivity"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tvUserMarginTop"
+            android:autofillHints=""
+            android:hint="@string/tvUserHint"
+            android:minHeight="@dimen/tvUserMinHeight"
+             />
+
+        <TextView
+            android:id="@+id/tvUserContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tvMessageMarginTop"
+            android:autofillHints=""
+
+            android:minHeight="@dimen/tvMessageMinHeight"
+            android:text="@{message.user.name}"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tvMessageMarginTop"
+            android:autofillHints=""
+            android:hint="@string/tvMessageText"
+            android:minHeight="@dimen/tvUserMinHeight"
+             />
+
+        <TextView
+            android:id="@+id/tvMessageContent"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:autofillHints=""
+            android:minHeight="@dimen/tvMessageMinHeightText"
+            android:text="@{message.content}"
+          />
+
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="281dp"
+            android:layout_height="88dp"
+            android:layout_margin="@dimen/etUserMarginTop"
+            android:contentDescription="@string/imgMessage"
+            app:srcCompat="@drawable/sobre" />
+    </LinearLayout>
+</layout>
