@@ -9,7 +9,7 @@ import com.danicc.sendmessage.data.Message;
 import com.danicc.sendmessage.databinding.ActivityViewMessageBinding;
 
 /**
- * clase que muestra un mensaje de un usuario. Recoge un mensaje que implementa la interfaz Parcelable
+ * clase que muestra un mensaje de un usuario. Recoge un mensaje que implementa la interfaz Parcelable y serializable
  */
 public class ViewMessageActivity extends AppCompatActivity {
     private static final String TAG = "ViewMessageActivity";
@@ -22,8 +22,7 @@ public class ViewMessageActivity extends AppCompatActivity {
         binding = ActivityViewMessageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //1. Recoger el Bundle  enviado en el intent que a iniciado
-        //esta actividad
+        //1. Recoger el Bundle enviado en el intent de SendMessageActivity
         Bundle bundle = getIntent().getExtras();
 
         Message message = bundle.getParcelable("message");

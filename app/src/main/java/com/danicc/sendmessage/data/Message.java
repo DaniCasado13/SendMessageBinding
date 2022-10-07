@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * Clase modelo que contiene el dato del usuario y el mensaje que manda
- * Al ser User un objeto se debe implementar la interfaz Serializable y parcelable en el objeto Message
+ * Como User es un objeto se debe implementar la interfaz Serializable y parcelable en el objeto Message
  * @author Dani Casado
  * @version 1.0
  */
@@ -27,8 +27,6 @@ public class Message implements Serializable, Parcelable {
         this.content = content;
     }
 
-
-
     public User getUser() {
         return user;
     }
@@ -45,14 +43,13 @@ public class Message implements Serializable, Parcelable {
         this.content = content;
     }
 
-
     @NonNull
     @Override
     public String toString() {
         return getUser()+ "->"+ getContent();
     }
 
-    //region Metodos creados por la interfaz parcelable
+    //region Metodos creados por la interfaz parcelable y serializable
     public static final Creator<Message> CREATOR = new Creator<Message>() {
         @Override
         public Message createFromParcel(Parcel in) {

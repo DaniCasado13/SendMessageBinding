@@ -139,7 +139,7 @@ public class SendMessageActivity extends AppCompatActivity {
 //end region
     /**
      * Metodo llamado al pulsar sobre el boton
-     * android:onClick="sendMessage"
+     *
      *
      * @param view
      */
@@ -153,7 +153,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(SendMessageActivity.this, "Es a traves de un delegado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SendMessageActivity.this, "Este evento se ejecuta a traves de un delegado", Toast.LENGTH_SHORT).show();
         }
     }
 }
