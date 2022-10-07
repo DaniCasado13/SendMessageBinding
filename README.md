@@ -8,13 +8,13 @@ App que envia un mensaje y el nombre del usuario que lo envia de una activity a 
 <b>Contenido del ejercicio:</b>
 </br>
 <h3>¿Que hemos aprendido?</h3></br>
--El ciclo de vida de una Activity
--Utilizar la clase LogCat para escribir en consola
--documentacion con javadocs y comentarios de linea, bloque y TODO
--como añadir librerias a nuestro proyecto
--Utilizar la libreria Logger
--Contexto de la aplicacion
-
+-El ciclo de vida de una Activity</br>
+-Utilizar la clase LogCat para escribir en consola</br>
+-documentacion con javadocs y comentarios de linea, bloque y TODO</br
+-como añadir librerias a nuestro proyecto</br>
+-Utilizar la libreria Logger</br>
+-Contexto de la aplicacion</br>
+</br>
 <h3>En este apartado se explica todo lo realizado en nuestro proyecto:</h3></br>
 </br>
 -Enviar y recibir datos entre activities mediante un intent y un bundle con un objeto serializable y parcelable</br>
