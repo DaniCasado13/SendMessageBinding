@@ -7,7 +7,15 @@ App que envia un mensaje y el nombre del usuario que lo envia de una activity a 
 <b>Minimun SDK:</b>26</br>
 <b>Contenido del ejercicio:</b>
 </br>
-En este apartado se explica todo lo realizado en nuestro proyecto:</br>
+<h3>¿Que hemos aprendido?</h3></br>
+-El ciclo de vida de una Activity
+-Utilizar la clase LogCat para escribir en consola
+-documentacion con javadocs y comentarios de linea, bloque y TODO
+-como añadir librerias a nuestro proyecto
+-Utilizar la libreria Logger
+-Contexto de la aplicacion
+
+<h3>En este apartado se explica todo lo realizado en nuestro proyecto:</h3></br>
 </br>
 -Enviar y recibir datos entre activities mediante un intent y un bundle con un objeto serializable y parcelable</br>
 -Crear una clase que extiende de application para crear una variable global a toda la aplicacion(User)</br>
